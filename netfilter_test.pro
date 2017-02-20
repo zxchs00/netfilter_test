@@ -13,8 +13,12 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        widget.cpp
+        widget.cpp \
+    myfil.cpp
 
-HEADERS  += widget.h
+HEADERS  += widget.h \
+    myfil.h
 
 FORMS    += widget.ui
+
+LIBS += -lnetfilter_queue
